@@ -111,8 +111,10 @@ p, a, li{
 Header
 ================================================================*/
 header{
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(89, 62, 108, 0.8);
     width: 250px;
+    border-right: 5px solid rgb(41, 6, 65);
+    border-left: 5px solid rgb(41, 6, 65);
 }
 .logo{
     padding: 150px 0;
@@ -135,10 +137,11 @@ Pages
     padding: 100px 0 0 50px;
 }
 .page{
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(89, 62, 108, 0.8);
     width: 700px;
     height: 550px;
-    border-right: 2px solid rgb(170, 170, 170);
+    border: 5px solid rgb(41, 6, 65);
+    border-right: 5px solid rgb(41, 6, 65);
 }
 /*================================================================
 Footer
@@ -147,5 +150,7 @@ footer{
     width: 80px;
     margin: 100px 0;
     height: 550px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(89, 62, 108, 0.8);
+    border: 5px solid rgb(41, 6, 65);
+    border-left: 2px solid rgb(41, 6, 65);
 }

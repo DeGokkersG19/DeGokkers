@@ -11,11 +11,10 @@
 <body>
 <div class="wrapper">
     <div class="slideshow">
-        <img class="slide" src="img/black_lozenge.png" alt="">
-        <img class="slide" src="img/dark_dotted2.png" alt="">
-        <img class="slide" src="img/ep_naturalblack.png" alt="">
-        <img class="slide" src="img/stardust.png" alt="">
-        <img class="slide" src="img/zwartevilt.png" alt="">
+        <img class="slide" src="img/andromeda-galaxy-755442_1280.jpg" alt="">
+        <img class="slide" src="img/milky-way-1655504_1280.jpg" alt="">
+        <img class="slide" src="img/milky-way-923801_1280.jpg" alt="">
+        <img class="slide" src="img/arch-896900_1280.jpg" alt="">
     </div>
     <div class="main-content">
         <div class="container flex">
