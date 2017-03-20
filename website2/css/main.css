@@ -153,6 +153,7 @@ Home
 }
 .welcome-text{
     width: 600px;
+    padding: 40px 0 0 0;
 }
 
 
@@ -160,7 +161,8 @@ Home
 download
 ===============================================================*/
 .download{
-    width: 60%;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid rgb(60, 60, 60);
 }
 .download-info p{
     padding:5px 0 0  15px ;
@@ -178,7 +180,8 @@ input[type="text"], input[type="password"], input[type="submit"] {
     color: #eeeeee;
 }
 input[type="text"], input[type="password"] {
-    background: #2B1B46;
+    background: #393b46;
+    opacity:0.7;
     width: 350px;
     padding: 5px;
     text-indent: 26px;
@@ -191,13 +194,23 @@ input[type="text"], input[type="password"] {
     border-bottom-right-radius: 6px;
 }
 input[type="submit"] {
-    background: #2B1B46;
+    background: #393b46;
+    opacity:0.7;
     padding: 5px 19px;
     cursor: pointer;
     width: 175px;
 }
+textarea {
+    background: #393b46;
+    opacity:0.7;
+    border: 2px solid #0D0013;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius:6px;
+
+}
 input[type="submit"]:hover {
-    background: #270D32;
+    background: #272932;
+    opacity:0.7;
 }
 #information {
     background: url('../img/icons/info.png') #eee;
@@ -218,17 +231,17 @@ input[type="submit"]:hover {
     color: #000000;
 }
 #username {
-    background: url('../img/icons/username.png') #2B1B46;
+    background: url('../img/icons/username.png') #393b46;
     background-repeat: no-repeat;
     background-position: 2px 2px;
 }
 #password {
-    background: url('../img/icons/password.png') #2B1B46;
+    background: url('../img/icons/password.png') #393b46;
     background-repeat: no-repeat;
     background-position: 2px 2px;
 }
 #email {
-    background: url('../img/icons/mail.png') #2B1B46;
+    background: url('../img/icons/mail.png')#393b46;
     background-repeat: no-repeat;
     background-position: 2px 2px;
 }
@@ -254,13 +267,48 @@ input[type="submit"]:hover {
 Gallery
 ===============================================================*/
 
+.gallery{
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
 /*===============================================================
 Contact
 ===============================================================*/
+.contact{
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+.contact p {
+    padding: 5px 0 0 15px;
+}
+.email form{
+    color:#fff;
 
+    }
+.email fieldset{
+    padding: 10px;
+}
+.email p{
+    width: 60%;
+}
+.email {
+    margin:15px 0 0 0 ;
+}
+#message{
+    width: 550px;
+    height: 150px;
+    color: #FFF;
+    font-size: 1.5em;
+}
+/*===============================================================
+Footer
+===============================================================*/
 
-
-
+footer{
+    background: rgba(60, 60, 60, 0.8);
+    margin:20px 0 20px 0;
+    height:100px;
+}
 
 
 

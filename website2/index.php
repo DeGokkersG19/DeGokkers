@@ -22,14 +22,7 @@
             <div class="logo">
                 <h1>SpaceRace™</h1>
             </div>
-            <nav class="navigation">
-                <ul class="flex-between"> 
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-                </ul
-            </nav>
+
         </header>
         <div class="main-content">
             <div class="home">
@@ -37,7 +30,7 @@
                 <div class="welcome-info flex-between">
                     <div class="welcome-text">
                         <p>Welcome to the official website of SpaceRace. here you can download a copy of the game for free to test it and give feedback to us.</p>
-                        <p>Here u have a sneak peak at the game en its UI.</p>
+                        <p>Here you have a sneak peak at the game en its UI.</p>
                         <p>SpaceRace is a game that is based around horsebetting but with a special twist.
                             the main purpose of the game is to have fun with your friends and maybe sometimes make some money of it
                             within your friend group. the game is made by a group of developers that had an order to make a game
@@ -55,7 +48,7 @@
                 </div>
 
             </div>
-            <div class="Download">
+            <div class="download">
                 <div class="download-info">
                     <h2>Download</h2>
                     <p> If u want to download the game you firstly need an account on this website.</p>
@@ -63,12 +56,33 @@
                 </div>
             </div>
             <div class="gallery">
-            
-            </div>
-            <div class="contact">
+             <h2>Gallery &amp; Screenshots</h2>
 
             </div>
+            <div class="contact ">
+                <h2>Contact &amp; Feedback</h2>
+                    <p>If you want to give feedback or contact us then it's possible to email us
+                    we will try to respond within a day.</p>
+                    <div class="email flex-between">
+                        <form action="/action_page.php" >
+                            <fieldset>
+                                <legend>Personal information:</legend>
+                                Email Adress:
+                                <input type="text" name="firstname">
+
+                                Message:
+                                <textarea type="text" name="text" id="message" ></textarea>
+
+                                <input type="submit" value="Submit">
+                            </fieldset>
+                        </form>
+                    </div>
+            </div>
+
         </div>
+        <footer>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis corporis cumque deserunt dignissimos dolorem, eos id incidunt nihil nulla perspiciatis provident quam quas quasi suscipit temporibus tenetur veniam voluptate!</p>
+        </footer>
     </div>
 
 
