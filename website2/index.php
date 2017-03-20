@@ -20,7 +20,7 @@
     <div class="container">
         <header class="flex-between">           
             <div class="logo">
-                <h1>SpaceRace</h1>
+                <h1>SpaceRace™</h1>
             </div>
             <nav class="navigation">
                 <ul class="flex-between"> 
@@ -43,25 +43,30 @@
                             within your friend group. the game is made by a group of developers that had an order to make a game
                             that looks like horserace but in space with ufo's'. the extra task was to give a random spacehip a boost.</p>
                     </div>
-
+					<form action="createaccount.php" method="GET">
+					<p id="information"><?php if(isset($_GET['errorMessage'])) { echo $_GET['errorMessage']; } elseif(!isset($_GET['usernameMessage'])) { echo "Please enter your desired user credentials"; }  ?><?php if(isset($_GET['usernameMessage'])) { echo $_GET['usernameMessage']; } ?></p>
+					<input type="text" placeholder="Username" name="username" id="username" data-cip-id="username">
+					<input type="password" placeholder="Password" name="password" id="password" data-cip-id="cIPJQ342845639">
+					<input type="password" placeholder="Re-enter password" name="password2" id="password" data-cip-id="cIPJQ342845640">
+					<input type="text" placeholder="Email" name="email" id="email" data-cip-id="email">
+					<input type="submit" value="Register" id="register">
+					<input type="submit" value="Cancel" id="cancel">
+					</form>
                 </div>
+
             </div>
-            <div class="download">
+            <div class="Download">
                 <div class="download-info">
                     <h2>Download</h2>
                     <p> If u want to download the game you firstly need an account on this website.</p>
                     <p>This game is made for windows computers.</p>
                 </div>
             </div>
-            <div class="gallery flex-between">
-                    <h2>Gallery &amp; Screenshots</h2>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
+            <div class="gallery">
+            
             </div>
             <div class="contact">
-                <h2>Contact &amp Feedback</h2>
+
             </div>
         </div>
     </div>
