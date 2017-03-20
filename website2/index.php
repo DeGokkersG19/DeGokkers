@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<<<<<<< Updated upstream
 <div class="slideshow">
     <img class="slide" src="img/andromeda-galaxy-755442_1280.jpg" alt="">
     <img class="slide" src="img/milky-way-1655504_1280.jpg" alt="">
@@ -21,7 +20,7 @@
     <div class="container">
         <header class="flex-between">           
             <div class="logo">
-                <h1>SpaceRace</h1>               
+                <h1>SpaceRace™</h1>
             </div>
             <nav class="navigation">
                 <ul class="flex-between"> 
@@ -39,58 +38,20 @@
                     <div class="welcome-text">
                         <p>Welcome to the official website of SpaceRace. here you can download a copy of the game for free to test it and give feedback to us.</p>
                         <p>Here u have a sneak peak at the game en its UI.</p>
-                    </div>
-                    <img src="http://lorempixel.com/g/400/200/" alt="testuh">
-=======
-                </div>
-                <nav class="navigation align-center">
-                    <ul>
-                        <li onclick="currentPage(1)">SpaceRace</li>
-                        <li onclick="currentPage(2)">Login/Register</li>
-                        <li onclick="currentPage(3)">Download</li>
-                        <li onclick="currentPage(4)">Feedback</li>
-                        <li onclick="currentPage(5)">Contact</li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="pages">
-                <div class="page">
-                    <div class="paragraph">
-                    <h1>SpaceRace</h1>
                         <p>SpaceRace is a game that is based around horsebetting but with a special twist.
                             the main purpose of the game is to have fun with your friends and maybe sometimes make some money of it
                             within your friend group. the game is made by a group of developers that had an order to make a game
-                            that looks like horserace but in space with ufo's'. the extra task was to give a random spacehip a boost.
-                        </p>
+                            that looks like horserace but in space with ufo's'. the extra task was to give a random spacehip a boost.</p>
                     </div>
-                </div>
-                <div class="page">
-                    <div class="paragraph">
-                        <h1>Login/Register</h1>
-                    </div>
-                </div>
-                <div class="page">
-                    <div class="paragraph">
-                        <h1>Download</h1>
-                    </div>
-                </div>
-                <div class="page">
-                    <div class="paragraph">
-                        <h1>Feedback</h1>
-                    </div>
-                </div>
-                <div class="page">
-                    <div class="paragraph">
-                        <h1>Contact</h1>
-                    </div>
->>>>>>> Stashed changes
+
                 </div>
             </div>
-            <div class="about">
-                <p>SpaceRace is a game that is based around horsebetting but with a special twist.
-                            the main purpose of the game is to have fun with your friends and maybe sometimes make some money of it
-                            within your friend group. the game is made by a group of developers that had an order to make a game
-                            that looks like horserace but in space with ufo's'. the extra task was to give a random spacehip a boost.</p>
+            <div class="Download">
+                <div class="download-info">
+                    <h2>Download</h2>
+                    <p> If u want to download the game you firstly need an account on this website.</p>
+                    <p>This game is made for windows computers.</p>
+                </div>
             </div>
             <div class="gallery">
             
@@ -133,7 +94,7 @@
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}
         x[myIndex-1].style.display = "block";
-        setTimeout(slideShow, 5000);
+        setTimeout(slideShow, 10000);
     }
     var pageIndex = 1;
     showPages(pageIndex);
