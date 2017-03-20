@@ -20,7 +20,7 @@
     <div class="container">
         <header class="flex-between">           
             <div class="logo">
-                <h1>SpaceRace™</h1>
+                <h1>SpaceRace</h1>
             </div>
             <nav class="navigation">
                 <ul class="flex-between"> 
@@ -46,18 +46,22 @@
 
                 </div>
             </div>
-            <div class="Download">
+            <div class="download">
                 <div class="download-info">
                     <h2>Download</h2>
                     <p> If u want to download the game you firstly need an account on this website.</p>
                     <p>This game is made for windows computers.</p>
                 </div>
             </div>
-            <div class="gallery">
-            
+            <div class="gallery flex-between">
+                    <h2>Gallery &amp; Screenshots</h2>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+
             </div>
             <div class="contact">
-
+                <h2>Contact &amp Feedback</h2>
             </div>
         </div>
     </div>

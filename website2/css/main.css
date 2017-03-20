@@ -91,7 +91,6 @@ h1{
 h2{
     font-size: 4em;
     width: 400px;
-    margin:10px 20px 10px 30px;
 }
 h3{
     font-size: 2em;
@@ -140,12 +139,12 @@ Home
     padding: 40px 20px;
 }
 .home{
-    padding: 0 0 40px 0;
+    padding: 20px;
     border-bottom: 1px solid rgb(60, 60, 60);
     width:60%;
     }
 .welcome-info p{
-    padding: 5px 0 0 15px;
+    padding: 5px 0 0 0 ;
 }
 .welcome-info img{
     height: 350px;
@@ -160,20 +159,34 @@ Home
 download
 ===============================================================*/
 .download{
+    padding: 30px 20px;
+    border-bottom: 1px solid rgb(60, 60, 60);
     width: 60%;
 }
 .download-info p{
-    padding:5px 0 0  15px ;
+    padding:5px 0 0 0 ;
 }
+
 
 /*===============================================================
 Gallery
 ===============================================================*/
-
+.gallery{
+    padding: 30px 20px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    width: 60%;
+}
 /*===============================================================
 Contact
 ===============================================================*/
-
+.contact{
+    padding: 30px 20px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    width: 60%;
+}
+.contact p{
+    padding:5px 0 0 0 ;
+}
 
 
 
