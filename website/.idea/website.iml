@@ -15,5 +15,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="php" />
   </component>
 </module>

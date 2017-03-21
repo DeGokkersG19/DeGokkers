@@ -64,14 +64,18 @@
                     <p>If you want to give feedback or contact us then it's possible to email us
                     we will try to respond within a day.</p>
                     <div class="email flex-between">
-                        <form action="/action_page.php" >
+                        <form action="sendmail.php" method="POST">
                             <fieldset>
                                 <legend>Personal information:</legend>
+
+                                Name:
+                                <input type="text" name="name" required>
+
                                 Email Adress:
-                                <input type="text" name="firstname">
+                                <input type="text" name="email" required>
 
                                 Message:
-                                <textarea type="text" name="text" id="message" ></textarea>
+                                <textarea type="text" name="message" id="message" required></textarea>
 
                                 <input type="submit" value="Submit">
                             </fieldset>
