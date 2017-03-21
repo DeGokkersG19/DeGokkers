@@ -18,7 +18,7 @@
 </div>
 <div class="wrapper">
     <div class="container">
-        <header class="flex-between">           
+        <header class="flex-between">
             <div class="logo">
                 <h1>SpaceRace™</h1>
             </div>
@@ -85,7 +85,11 @@
 
         </div>
         <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis corporis cumque deserunt dignissimos dolorem, eos id incidunt nihil nulla perspiciatis provident quam quas quasi suscipit temporibus tenetur veniam voluptate!</p>
+          <p>Contact information: <a href="mailto:someone@example.com">
+          spaceraceg19@gmail.com</a>.</p>
+          <img src="img/Spacerace_Logo.png" alt="Spacerace Logo" width=100 height=100>
+          <p id="created">Website created by: De Gokkers</p>
+
         </footer>
     </div>
 

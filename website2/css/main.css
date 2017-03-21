@@ -129,7 +129,7 @@ header{
 .navigation{
     width: 300px;
     padding: 40px 30px;
-    
+
 }
 /*===============================================================
 Home
@@ -307,18 +307,15 @@ Footer
 footer{
     background: rgba(60, 60, 60, 0.8);
     margin:20px 0 20px 0;
-    height:100px;
+    height:145px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer #created{
+  margin:0 0 0 885px;
+.
+}
+footer p, a{
+  color:#6C6B6C;
+}
+footer img{
+  margin:0 0 0 0;
+}
