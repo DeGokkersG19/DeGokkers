@@ -60,6 +60,9 @@
                     <h2>Download</h2>
                     <p> If u want to download the game you firstly need an account on this website.</p>
                     <p>This game is made for windows computers.</p>
+                    <div class="downloadbutton">
+                    <a href="../img/icons/zwartevilt.png" download class="button button-gray">Download</a>
+                    </div>
                 </div>
             </div>
             <div class="gallery">
