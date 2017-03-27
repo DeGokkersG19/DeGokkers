@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1:3307";
-$username = "root";
-$password = "golife123";
-$dbname = "webtest";
+$servername = "localhost";
+$username = "exceed_root";
+$password = "qwerty123.";
+$dbname = "exceed_algemeen";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

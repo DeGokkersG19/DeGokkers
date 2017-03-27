@@ -64,7 +64,7 @@
                     <?php
                         session_start();
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                            echo '<a href="../img/icons/zwartevilt.png" download class="button button-gray">Download</a>';
+                            echo '<a href="file/Spacerace_g19.zip" download class="button button-gray">Download</a>';
                             session_destroy();
                         } else {
                             echo '<p>Please login first to download this file.</p>';

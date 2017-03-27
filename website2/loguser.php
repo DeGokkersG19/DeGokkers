@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1:3307";
-$username = "root";
-$password = "golife123";
-$dbname = "webtest";
+$servername = "localhost";
+$username = "exceed_root";
+$password = "qwerty123.";
+$dbname = "exceed_algemeen";
 
 // Account Creation
 $cUsername = $_GET['username'];
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql="SELECT * FROM users WHERE username='$cUsername' and password='$cPassword'";
+$sql="SELECT * FROM users WHERE username='$cUsername' and password='$cPassword' and isValid='1'";
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 

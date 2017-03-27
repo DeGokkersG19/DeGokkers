@@ -1,8 +1,9 @@
 <?php
-$servername = "127.0.0.1:3307";
-$username = "root";
-$password = "golife123";
-$dbname = "webtest";
+$servername = "localhost";
+$username = "exceed_root";
+$password = "qwerty123.";
+$dbname = "exceed_algemeen";
+$activationLink = "http://exceed.s1.one2xs.com/verify.php";
 
 // Account Creation
 $cUsername = $_GET['username'];
@@ -11,6 +12,15 @@ $cPassword2 = $_GET['password2'];
 $cEmail = $_GET['email'];
 $homeURL = "index.php";
 $userIP = $_SERVER['REMOTE_ADDR'];
+
+// Email Verification
+$to = $cEmail;
+$subject = "Verifieer je account op SpaceRace";
+$txt = "Beste $cUsername,
+		U heeft zich onlangs geregistreerd op onze website. Om je account te verifiëren, klik op de onderstaande link. Het is wel belangrijk om je account van dezelfde locatie te verifiëren als de locatie waarop U zich heeft geregistreerd!
+
+		$activationLink?user=$cUsername";
+$headers = "From: $cEmail";
 
 // Return inputs of registration form
 var_dump($cUsername, $cPassword, $cPassword2, $cEmail);
@@ -41,7 +51,8 @@ if (isset($cUsername) && ($isAvailable) && filter_var($cEmail, FILTER_VALIDATE_E
 		VALUES ('$cUsername', '$cPassword', '". $cEmail ."', 'false', '$userIP')";
 
 		if ($conn->query($sql) === TRUE) {
-			$errorMessage = "You have succesfully created a account, you can now log in!";
+			$errorMessage = "You have succesfully registered, please verify your email!";
+			mail($to,$subject,$txt,$headers);
 			if (isset($usernameMessage))
 			{
 				header("Location: " . $homeURL . "?usernameMessage=$usernameMessage");
