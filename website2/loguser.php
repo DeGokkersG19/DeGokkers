@@ -25,8 +25,11 @@ $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
 if(mysqli_num_rows($result) == 1) 
 {
-	$errorMessage = "Succes!";
+	$errorMessage = "You can now download Spacerace";
 	header("Location: " . $homeURL . "?errorMessage=$errorMessage");
+	session_start();
+    $_SESSION['loggedin'] = true;
+    $_SESSION['username'] = $username;
 }
 else 
 	$errorMessage = "Invalid login credentials!";

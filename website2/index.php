@@ -61,7 +61,15 @@
                     <p> If u want to download the game you firstly need an account on this website.</p>
                     <p>This game is made for windows computers.</p>
                     <div class="downloadbutton">
-                    <a href="../img/icons/zwartevilt.png" download class="button button-gray">Download</a>
+                    <?php
+                        session_start();
+                        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                            echo '<a href="../img/icons/zwartevilt.png" download class="button button-gray">Download</a>';
+                            session_destroy();
+                        } else {
+                            echo '<p>Please login first to download this file.</p>';
+                        }
+                    ?>
                     </div>
                 </div>
             </div>
