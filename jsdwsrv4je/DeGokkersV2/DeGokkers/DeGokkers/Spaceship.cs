@@ -38,7 +38,7 @@ namespace DeGokkers
         }
         public void Boost()
         {
-            this.myPictureBox.Left += 30;
+            this.myPictureBox.Left += 100;
         }
         public bool Finished()
         {

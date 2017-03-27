@@ -22,7 +22,14 @@
             <div class="logo">
                 <h1>SpaceRace™</h1>
             </div>
-
+            <form action="loguser.php" method="GET" class="flex">
+                <div id="form-left">
+                <p id="error-message"><?php if(isset($_GET['errorMessage'])) { echo $_GET['errorMessage']; } elseif(!isset($_GET['usernameMessage'])) { echo "Please enter your user credentials"; }  ?><?php if(isset($_GET['usernameMessage'])) { echo $_GET['usernameMessage']; } ?></p>
+                    <input type="text" placeholder="Username" name="username" id="username">
+                    <input type="password" placeholder="Password" name="password" id="password">
+                </div>
+                <input type="submit" value="Log in" id="login">
+            </form>
         </header>
         <div class="main-content">
             <div class="home">

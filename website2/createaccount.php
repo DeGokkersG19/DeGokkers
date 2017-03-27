@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1:3306";
+$servername = "127.0.0.1:3307";
 $username = "root";
-$password = "";
+$password = "golife123";
 $dbname = "webtest";
 
 // Account Creation
@@ -10,6 +10,7 @@ $cPassword = $_GET['password'];
 $cPassword2 = $_GET['password2'];
 $cEmail = $_GET['email'];
 $homeURL = "index.php";
+$userIP = $_SERVER['REMOTE_ADDR'];
 
 // Return inputs of registration form
 var_dump($cUsername, $cPassword, $cPassword2, $cEmail);
@@ -36,8 +37,8 @@ $query = "SELECT * from users where username ='$cUsername'";
     $usernameMessage = "Could not search for username, please contact us!";
 
 if (isset($cUsername) && ($isAvailable) && filter_var($cEmail, FILTER_VALIDATE_EMAIL) && ($cPassword == $cPassword2)) {
-		$sql = "INSERT INTO users (username, password, email)
-		VALUES ('$cUsername', '$cPassword', '". $cEmail ."')";
+		$sql = "INSERT INTO users (username, password, email, isValid, ip)
+		VALUES ('$cUsername', '$cPassword', '". $cEmail ."', 'false', '$userIP')";
 
 		if ($conn->query($sql) === TRUE) {
 			$errorMessage = "You have succesfully created a account, you can now log in!";
