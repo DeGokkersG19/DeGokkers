@@ -1,21 +1,10 @@
 <?php
-// Database details
-$servername = "localhost";
-$username = "exceed_root";
-$password = "qwerty123.";
-$dbname = "exceed_algemeen";
-$homeURL = 'index.php';
+require('scripts/db.php');
 
 // User details
 $cIP = $_SERVER['REMOTE_ADDR'];
 $cUsername = $_GET['user'];
-
-// Database connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+$homeURL = '../index.php';
 
 $query = "SELECT * from users where username ='$cUsername' AND ip ='$cIP'";
 	if ($result=mysqli_query($conn,$query)) {

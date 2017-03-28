@@ -1,17 +1,14 @@
 <?php
-$servername = "localhost";
-$username = "exceed_root";
-$password = "qwerty123.";
-$dbname = "exceed_algemeen";
-$activationLink = "http://exceed.s1.one2xs.com/verify.php";
+require('db.php');
 
 // Account Creation
 $cUsername = $_GET['username'];
 $cPassword = $_GET['password'];
 $cPassword2 = $_GET['password2'];
 $cEmail = $_GET['email'];
-$homeURL = "index.php";
+$homeURL = "../index.php";
 $userIP = $_SERVER['REMOTE_ADDR'];
+$activationLink = 'http://exceed.s1.one2xs.com/verify.php';
 
 // Email Verification
 $to = $cEmail;
@@ -24,13 +21,6 @@ $headers = "From: $cEmail";
 
 // Return inputs of registration form
 var_dump($cUsername, $cPassword, $cPassword2, $cEmail);
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $query = "SELECT * from users where username ='$cUsername'";
 	if ($result=mysqli_query($conn,$query)) {

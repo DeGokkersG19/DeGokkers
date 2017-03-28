@@ -12,8 +12,8 @@ if(isset($_POST)){
 require("emails.php");
 require("messages.php");
 
-$emailList = new emails("text/emails.txt");
-$messageList = new messages("text/messages.txt");
+$emailList = new emails("../text/emails.txt");
+$messageList = new messages("../text/messages.txt");
 
 if (isset($_POST["email"]) && !empty($_POST["email"]))
 {
@@ -47,5 +47,5 @@ else
 
 mail($to,$subject,$txt,$headers);
 
-header("Location: index.php?message=$confirmation");
+header("Location: ../index.php?message=$confirmation");
 ?>
