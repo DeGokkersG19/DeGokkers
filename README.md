@@ -1,2 +1,0 @@
-# DeGokkers
-project de gokkers

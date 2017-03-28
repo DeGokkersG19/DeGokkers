@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
+    <link rel="icon" href=img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
@@ -18,11 +19,18 @@
 </div>
 <div class="wrapper">
     <div class="container">
-        <header class="flex-between">           
+        <header class="flex-between">
             <div class="logo">
                 <h1>SpaceRace™</h1>
             </div>
-
+            <form action="scripts/loguser.php" method="GET" class="flex">
+                <div id="form-left">
+                <p id="error-message"><?php if(isset($_GET['errorMessage'])) { echo $_GET['errorMessage']; } elseif(!isset($_GET['usernameMessage'])) { echo "Please enter your user credentials"; }  ?><?php if(isset($_GET['usernameMessage'])) { echo $_GET['usernameMessage']; } ?></p>
+                    <input type="text" placeholder="Username" name="username" id="username">
+                    <input type="password" placeholder="Password" name="password" id="password">
+                </div>
+                <input type="submit" value="Log in" id="login">
+            </form>
         </header>
         <div class="main-content">
             <div class="home">
@@ -36,7 +44,7 @@
                             within your friend group. the game is made by a group of developers that had an order to make a game
                             that looks like horserace but in space with ufo's'. the extra task was to give a random spacehip a boost.</p>
                     </div>
-					<form action="createaccount.php" method="GET">
+					<form action="scripts/createaccount.php" method="GET">
 					<p id="information"><?php if(isset($_GET['errorMessage'])) { echo $_GET['errorMessage']; } elseif(!isset($_GET['usernameMessage'])) { echo "Please enter your desired user credentials"; }  ?><?php if(isset($_GET['usernameMessage'])) { echo $_GET['usernameMessage']; } ?></p>
 					<input type="text" placeholder="Username" name="username" id="username" data-cip-id="username">
 					<input type="password" placeholder="Password" name="password" id="password" data-cip-id="cIPJQ342845639">
@@ -53,6 +61,17 @@
                     <h2>Download</h2>
                     <p> If u want to download the game you firstly need an account on this website.</p>
                     <p>This game is made for windows computers.</p>
+                    <div class="downloadbutton">
+                    <?php
+                        session_start();
+                        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                            echo '<a href="file/Spacerace_g19.zip" download class="button button-gray">Download</a>';
+                            session_destroy();
+                        } else {
+                            echo '<p>Please login first to download this file.</p>';
+                        }
+                    ?>
+                    </div>
                 </div>
             </div>
             <div class="gallery">
@@ -64,7 +83,7 @@
                     <p>If you want to give feedback or contact us then it's possible to email us
                     we will try to respond within a day.</p>
                     <div class="email flex-between">
-                        <form action="sendmail.php" method="POST">
+                        <form action="scripts/sendmail.php" method="POST">
                             <fieldset>
                                 <legend>Personal information:</legend>
 
@@ -85,7 +104,11 @@
 
         </div>
         <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis corporis cumque deserunt dignissimos dolorem, eos id incidunt nihil nulla perspiciatis provident quam quas quasi suscipit temporibus tenetur veniam voluptate!</p>
+          <p>Contact information: <a href="mailto:someone@example.com">
+          spaceraceg19@gmail.com</a>.</p>
+          <img src="img/Spacerace_Logo.png" alt="Spacerace Logo" width=100 height=100>
+          <p id="created">Website created by: De Gokkers</p>
+
         </footer>
     </div>
 
