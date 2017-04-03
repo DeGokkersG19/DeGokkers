@@ -76,9 +76,7 @@
             </div>
             <div class="gallery">
              <h2>Gallery</h2>
-                <video src="">
-                    <source src="" type="video/2017-04-03 13-11-57">
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2N-cD1FifrI" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="contact ">
                 <h2>Contact &amp; Feedback</h2>
