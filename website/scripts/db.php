@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "exceed_root";
-$password = "qwerty123.";
-$dbname = "exceed_algemeen";
+$username 	= "exceed_root";
+$password 	= "qwerty123.";
+$dbname 	= "exceed_algemeen";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

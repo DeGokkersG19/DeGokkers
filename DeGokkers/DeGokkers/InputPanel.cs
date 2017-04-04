@@ -131,6 +131,9 @@ namespace DeGokkers
                 better2Bet.Enabled = true;
                 better3Bet.Enabled = true;
 
+                sietse.ClearBet();
+                fer.ClearBet();
+                lidy.ClearBet();
 
                 winner = 0;
             }
@@ -192,7 +195,11 @@ namespace DeGokkers
 
         private void better1Bet_Click(object sender, EventArgs e)
         {
-            if (better1.Checked)
+            if (sietse.GetCash() < better1Amount.Value)
+            {
+                better1Bet.Enabled = false;
+            }
+            else if (better1.Checked)
             {
                 int value = (int) better1Amount.Value;
                 int spaceshipNumber = (int) spaceshipSelector1.Value;
@@ -204,7 +211,11 @@ namespace DeGokkers
 
         private void better2Bet_Click(object sender, EventArgs e)
         {
-            if (better2.Checked)
+            if (fer.GetCash() < better2Amount.Value)
+            {
+                better2Bet.Enabled = false;
+            }
+            else if (better2.Checked)
             {
                 int value = (int)better2Amount.Value;
                 int spaceshipNumber = (int)spaceshipSelector2.Value;
@@ -216,7 +227,11 @@ namespace DeGokkers
 
         private void better3Bet_Click(object sender, EventArgs e)
         {
-            if (better3.Checked)
+            if (lidy.GetCash() < better3Amount.Value)
+            {
+                better3Bet.Enabled = false;
+            }
+            else if (better3.Checked)
             {
                 int value = (int)better3Amount.Value;
                 int spaceshipNumber = (int)spaceshipSelector3.Value;

@@ -2,12 +2,12 @@
 require('db.php');
 
 // Account Creation
-$cUsername = $_GET['username'];
-$cPassword = $_GET['password'];
-$cPassword2 = $_GET['password2'];
-$cEmail = $_GET['email'];
-$homeURL = "../index.php";
-$userIP = $_SERVER['REMOTE_ADDR'];
+$cUsername 		= $_GET['username'];
+$cPassword 		= $_GET['password'];
+$cPassword2 	= $_GET['password2'];
+$cEmail 		= $_GET['email'];
+$homeURL 		= "../index.php";
+$userIP 		= $_SERVER['REMOTE_ADDR'];
 $activationLink = 'http://exceed.s1.one2xs.com/verify.php';
 
 // Email Verification
@@ -58,7 +58,6 @@ if (isset($cUsername) && ($isAvailable) && filter_var($cEmail, FILTER_VALIDATE_E
 				header("Location: " . $homeURL . "?usernameMessage=$usernameMessage&errorMessage=$errorMessage");
 				exit();
 			}
-
 		} else {
 			$errorMessage = "Error: " . $sql . "<br>" . $conn->error;
 			header("Location: " . $homeURL . "?errorMessage=$errorMessage");

@@ -2,9 +2,9 @@
 namespace website2;
 
 if(isset($_POST)){
-    $Name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+    $Name       = $_POST["name"];
+    $email      = $_POST["email"];
+    $message    = $_POST["message"];
     
     
 }
@@ -12,8 +12,8 @@ if(isset($_POST)){
 require("emails.php");
 require("messages.php");
 
-$emailList = new emails("../text/emails.txt");
-$messageList = new messages("../text/messages.txt");
+$emailList      = new emails("../text/emails.txt");
+$messageList    = new messages("../text/messages.txt");
 
 if (isset($_POST["email"]) && !empty($_POST["email"]))
 {

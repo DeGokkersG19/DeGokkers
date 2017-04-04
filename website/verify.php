@@ -2,9 +2,9 @@
 require('scripts/db.php');
 
 // User details
-$cIP = $_SERVER['REMOTE_ADDR'];
-$cUsername = $_GET['user'];
-$homeURL = '../index.php';
+$cIP 		= $_SERVER['REMOTE_ADDR'];
+$cUsername 	= $_GET['user'];
+$homeURL 	= '../index.php';
 
 $query = "SELECT * from users where username ='$cUsername' AND ip ='$cIP'";
 	if ($result=mysqli_query($conn,$query)) {

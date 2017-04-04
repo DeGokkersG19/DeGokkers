@@ -44,7 +44,7 @@ namespace DeGokkers
 
         public void ClearBet()
         {
-            
+            this.amount = 0;
         }
         public int PayOut(int Winner)
         {

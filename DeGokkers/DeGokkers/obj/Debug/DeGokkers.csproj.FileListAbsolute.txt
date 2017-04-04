@@ -80,3 +80,12 @@ C:\xampp\htdocs\Git\DeGokkers\jsdwsrv4je\DeGokkersV2\DeGokkers\DeGokkers\obj\Deb
 C:\xampp\htdocs\Git\DeGokkers\jsdwsrv4je\DeGokkersV2\DeGokkers\DeGokkers\obj\Debug\DeGokkers.InputPanel.resources
 C:\xampp\htdocs\Git\DeGokkers\jsdwsrv4je\DeGokkersV2\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
 C:\xampp\htdocs\Git\DeGokkers\jsdwsrv4je\DeGokkersV2\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe.config
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.pdb
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.InputPanel.resources
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\xampp\htdocs\Git\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
